@@ -1,0 +1,31 @@
+---
+// Fundations
+import Text from "@/components/fundations/elements/Text.astro";
+import Button from "@/components/fundations/elements/Button.astro";
+import Wrapper from "@/components/fundations/containers/Wrapper.astro";
+---
+
+<section>
+  <Wrapper variant="standard" class="pb-12 pt-48">
+    <div
+      class="mx-auto text-center"
+      data-aos="fade-down"
+      data-aos-duration="1500"
+    >
+      <Text tag="h1" variant="displayXL" class="text-white font-display">
+        ClockworkIdeas<span class="md:block text-base-400">
+          AI should work like clockwork.</span
+        >
+      </Text>
+      <Text tag="p" variant="textXL" class="mt-4 text-base-300"
+        >AI Automation and Consultancy Work</Text
+      >
+      <div class="flex flex-wrap justify-center gap-3 mt-12">
+        <Button href="#pricing" size="lg" variant="accent"
+          >See alll plans</Button
+        >
+        <Button href="/work" size="lg" variant="muted">Our work</Button>
+      </div>
+    </div>
+  </Wrapper>
+</section>
