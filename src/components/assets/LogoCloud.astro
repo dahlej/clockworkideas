@@ -5,39 +5,44 @@ import Wrapper from "@/components/fundations/containers/Wrapper.astro";
 // Assets
 import { Image } from "astro:assets";
 // import the logos
-import logo1 from "@/images/brands/1.svg";
-import logo2 from "@/images/brands/2.svg";
-import logo3 from "@/images/brands/3.svg";
+import fishmanLogo from "@/images/logos/fishman-189x48-clean.png";
 const logos = [
-  { src: logo1, alt: "b1 Logo" },
-  { src: logo2, alt: "b2 Logo" },
-  { src: logo3, alt: "b3 Logo" },
+  {
+    src: fishmanLogo,
+    alt: "TheFishman logo",
+    href: "https://www.fishmanservices.com/",
+  },
 ];
 ---
 
 <section>
   <Wrapper variant="standard" class="py-24">
     <div
-      class="grid grid-cols-1 py-12 items-center lg:grid-cols-4 border-y md:grid-cols-2 border-base-800 lg:gap-24"
+      class="grid grid-cols-1 py-12 items-center border-y md:grid-cols-[max-content_max-content] border-base-800 gap-8 md:gap-12 justify-center"
     >
-      <div class="col-span-full lg:col-span-1 lg:max-w-none lg:mr-auto mx-auto">
+      <div class="max-w-48 md:max-w-56">
         <Text tag="p" variant="textXS" class="text-base-300 text-balance">
-          Some of the mazing companies we have worked with
+          Some of the amazing companies we have worked with
         </Text>
       </div>
-      <div class="mt-12 lg:mt-0 md:col-span-3">
-        <div
-          class="flex flex-col md:flex-row items-center justify-between gap-2"
-        >
+      <div>
+        <div class="flex items-center justify-center">
           {
             logos.map((logo) => (
-              <Image
-                width={200}
-                height={100}
-                class="h-12 lg:h-8 "
-                src={logo.src}
-                alt={logo.alt}
-              />
+              <a
+                href={logo.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit Fishman Services"
+              >
+                <Image
+                  width={189}
+                  height={48}
+                  class="h-auto w-[189px] max-w-full"
+                  src={logo.src}
+                  alt={logo.alt}
+                />
+              </a>
             ))
           }
         </div>

@@ -7,10 +7,10 @@ import Button from "@/components/fundations/elements/Button.astro";
 import Menu from "@/components/fundations/icons/Menu.astro";
 
 const navLinks = [
-  { label: "Work", href: "/work" },
+  { label: "Products", href: "/products" },
   { label: "Services", href: "/#services" },
   { label: "Blog", href: "/blog" },
-  { label: "Team", href: "/team" },
+  { label: "Team", href: "/teams" },
   { label: "Overview", href: "/system/overview" },
 ];
 ---
@@ -21,7 +21,7 @@ const navLinks = [
     class="px-8 mx-auto transition-all duration-1000 ease-in-out transform lg:max-w-xl"
   >
     <div
-      class="relative flex flex-col w-full p-2 mx-auto border backdrop-blur-xl backdrop-filter bg-base-900/60 border-base-800 md:flex-row md:items-center md:justify-between lg:rounded-2xl rounded-xl shadow-massive"
+      class="relative flex flex-col w-full p-2 mx-auto border backdrop-blur-xl backdrop-filter bg-base-900/60 border-base-800 md:flex-row md:items-center md:justify-start lg:rounded-2xl rounded-xl shadow-massive"
     >
       <div class="flex flex-row items-center justify-between md:justify-start">
         <a href="/" aria-label="Homepage">
@@ -41,10 +41,10 @@ const navLinks = [
         </Button>
       </div><nav
         id="nav-menu"
-        class="flex-col justify-center flex-grow hidden py-12 md:flex-row md:flex md:items-end md:py-0"
+        class="flex-col justify-center hidden py-12 md:ml-6 md:flex-row md:flex md:items-end md:py-0"
       >
         <ul
-          class="items-center justify-center text-center list-none gap-y-6 md:gap-3 flex flex-col md:flex-row md:ml-auto md:text-left"
+          class="items-center justify-center text-center list-none gap-y-6 md:gap-3 flex flex-col md:flex-row md:text-left"
         >
           {
             navLinks.map((link) => (
@@ -58,14 +58,6 @@ const navLinks = [
               </li>
             ))
           }
-          <li class="flex justify-center">
-            <Button
-              size="sm"
-              variant="accent"
-              href="https://lexingtonthemes.com/templates/aubergine"
-              >Buy Aubergine</Button
-            >
-          </li>
         </ul>
       </nav>
     </div>

@@ -24,7 +24,7 @@ import Wrapper from "@/components/fundations/containers/Wrapper.astro";
             Let's get started!
           </Text>
         </div>
-        <form>
+        <form id="contact-form">
           <div class="mt-12 space-y-4">
             <div>
               <label for="name" class="block text-sm font-medium text-white"
@@ -96,3 +96,31 @@ import Wrapper from "@/components/fundations/containers/Wrapper.astro";
     </Wrapper>
   </section>
 </BaseLayout>
+
+<script>
+  const form = document.getElementById("contact-form");
+
+  form?.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(form as HTMLFormElement);
+    const name = String(formData.get("name") || "");
+    const company = String(formData.get("company") || "");
+    const email = String(formData.get("email") || "");
+    const message = String(formData.get("message") || "");
+
+    const subject = encodeURIComponent(`New project inquiry from ${name || "website"}`);
+    const body = encodeURIComponent(
+      [
+        `Name: ${name}`,
+        `Company: ${company}`,
+        `Email: ${email}`,
+        "",
+        "Project details:",
+        message,
+      ].join("\n"),
+    );
+
+    window.location.href = `mailto:dahle.assistant@gmail.com?subject=${subject}&body=${body}`;
+  });
+</script>
