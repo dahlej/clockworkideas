@@ -1,0 +1,79 @@
+---
+// Fundations
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Text from "@/components/fundations/elements/Text.astro";
+import Button from "@/components/fundations/elements/Button.astro";
+import Wrapper from "@/components/fundations/containers/Wrapper.astro";
+
+const consentText =
+  "By submitting this form, you agree to receive SMS messages from Clockwork Ideas or its client businesses related to service updates, appointments, invoices, and customer support. Message and data rates may apply. Reply STOP to opt out.";
+---
+
+<BaseLayout>
+  <section class="relative overflow-hidden">
+    <Wrapper
+      variant="standard"
+      class="flex min-h-dvh flex-col items-center justify-center py-32"
+    >
+      <div class="mx-auto w-full max-w-md">
+        <div class="text-center">
+          <Text
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            tag="h1"
+            variant="displayLG"
+            class="text-white font-display"
+          >
+            SMS Consent
+          </Text>
+          <Text
+            tag="p"
+            variant="textBase"
+            class="mx-auto mt-5 max-w-sm text-base-300 text-balance"
+          >
+            Submit your phone number to receive service-related text messages.
+          </Text>
+        </div>
+
+        <form
+          action="https://clockworkideas.ngrok.io/webhook-test/fd6dc90a-3779-41bd-bf2c-201b29079334"
+          method="post"
+          class="mt-12 space-y-5"
+        >
+          <div>
+            <label for="phone" class="block text-sm font-medium text-white">
+              Mobile phone number
+            </label>
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              autocomplete="tel"
+              inputmode="tel"
+              required
+              placeholder="(555) 555-5555"
+              aria-describedby="sms-consent"
+              class="block w-full h-12 px-3 py-2 mt-2 border rounded-md appearance-none bg-base-900 border-base-800 focus:bg-base-900 focus:border-accent-300 focus:outline-none focus:ring-accent-300 placeholder-base-500 sm:text-sm text-accent-300 text-lime"
+            />
+          </div>
+
+          <input type="hidden" name="consent" value={consentText} />
+          <input type="hidden" name="source" value="clockworkideas-consent-page" />
+
+          <p id="sms-consent" class="text-sm leading-6 text-base-300">
+            {consentText}
+          </p>
+
+          <Button
+            type="submit"
+            size="lg"
+            variant="accent"
+            class="w-full"
+          >
+            Submit Consent
+          </Button>
+        </form>
+      </div>
+    </Wrapper>
+  </section>
+</BaseLayout>
