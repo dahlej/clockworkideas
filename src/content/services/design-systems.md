@@ -1,34 +1,18 @@
 ---
-service: Design systems
-description: Strategizing and executing data-driven marketing campaigns is crucial for enhancing your online presence.
+service: AI Training
+description: Practical training for using AI agents, AI-assisted workflows, prompts, and review steps responsibly.
 ---
 
-# Design Systems Services
+## AI Training
 
-## Streamlining Design for Consistency and Efficiency
+Clockwork Ideas trains teams to use AI in everyday operations without losing control of customer communication or internal decisions.
 
-Our Design Systems services help organizations create comprehensive design systems that standardize design practices, improve collaboration, and ensure consistency across products and platforms.
+### What Training Covers
 
-### Our Approach
+- Prompt workflows and review habits.
+- When to use AI and when to escalate to a person.
+- How to maintain and improve workflow automations after launch.
 
-- **Assessment & Strategy**: Evaluating your current design practices and developing a strategy for implementing a design system.
+### Support
 
-- **Design System Development**: Building a scalable and adaptable design system that includes guidelines for design, components, and patterns.
-
-- **Implementation & Integration**: Assisting with the implementation of the design system across your projects and platforms.
-
-### Our Services
-
-- **UI Component Libraries**: Developing libraries of reusable UI components for faster and more consistent design.
-
-- **Design Guidelines & Documentation**: Creating detailed documentation and guidelines for design consistency.
-
-- **Training & Support**: Providing training and ongoing support to ensure effective use of the design system.
-
-### Why Choose Us?
-
-- **Expertise in Design Systems**: Our team has extensive experience in developing and implementing design systems.
-
-- **Custom Solutions**: We tailor our services to meet the specific needs of your organization.
-
-- **Long-term Value**: Our design systems are designed to grow with your organization, providing long-term value and efficiency.
+Contact Clockwork Ideas at john.dahle@clockworkideas.com or (205) 936-6943.

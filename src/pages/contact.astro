@@ -6,90 +6,144 @@ import Button from "@/components/fundations/elements/Button.astro";
 import Wrapper from "@/components/fundations/containers/Wrapper.astro";
 ---
 
-<BaseLayout hideNav={true} hideFooter={true}>
-  <section class="relative overflow-hidden">
+<BaseLayout>
+  <section class="relative overflow-hidden pt-36 pb-20 lg:pt-40 lg:pb-24">
     <Wrapper
       variant="standard"
-      class="flex flex-col lg:h-dvh items-center justify-center"
+      class="grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:items-start"
     >
-      <div class="w-full max-w-sm mx-auto">
-        <div class="overflow-hidden">
-          <Text
-            data-aos="fade-up"
-            data-aos-duration="1500"
-            tag="h1"
-            variant="displayMD"
-            class="text-white font-display"
-          >
-            Let's get started!
-          </Text>
+      <div>
+        <Text
+          tag="p"
+          variant="textSM"
+          class="font-medium uppercase tracking-[0.18em] text-accent-300"
+        >
+          Contact
+        </Text>
+        <Text
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          tag="h1"
+          variant="displayXL"
+          class="mt-5 text-white font-display text-balance"
+        >
+          Contact Clockwork Ideas
+        </Text>
+        <Text
+          tag="p"
+          variant="textLG"
+          class="mt-6 max-w-xl text-base-300 text-balance"
+        >
+          Clockwork Ideas provides AI automation, customer communication,
+          scheduling, workflow automation, and business integration services for
+          small and medium businesses.
+        </Text>
+
+        <div class="mt-10 space-y-4 border-y border-base-800 py-8 text-sm text-base-300">
+          <p>Business name: Clockwork Ideas</p>
+          <p>
+            Website:
+            <a class="text-accent-300 hover:text-white" href="https://www.clockworkideas.com"
+              >https://www.clockworkideas.com</a
+            >
+          </p>
+          <p>
+            Email:
+            <a class="text-accent-300 hover:text-white" href="mailto:john.dahle@clockworkideas.com"
+              >john.dahle@clockworkideas.com</a
+            >
+          </p>
+          <p>
+            Phone:
+            <a class="text-accent-300 hover:text-white" href="tel:+12059366943"
+              >(205) 936-6943</a
+            >
+          </p>
         </div>
-        <form id="contact-form">
-          <div class="mt-12 space-y-4">
+
+        <Text tag="p" variant="textSM" class="mt-6 max-w-xl leading-6 text-base-400">
+          Customers can contact Clockwork Ideas for support, SMS help,
+          appointment questions, invoices, service updates, and operational
+          notifications. For SMS assistance, reply HELP to a Clockwork Ideas
+          message or contact us using the email or phone number above.
+        </Text>
+      </div>
+
+      <div class="w-full max-w-xl lg:ml-auto">
+        <Text tag="h2" variant="displaySM" class="text-white font-display">
+          Send a message
+        </Text>
+        <form id="contact-form" class="mt-8">
+          <div class="space-y-4">
             <div>
-              <label for="name" class="block text-sm font-medium text-white"
-                >First name</label
-              >
+              <label for="name" class="block text-sm font-medium text-white">
+                Name
+              </label>
               <input
                 id="name"
                 name="name"
                 type="text"
-                placeholder="John"
-                aria-placeholder="First name"
+                autocomplete="name"
+                placeholder="Your name"
                 class="block w-full h-12 px-3 py-2 mt-2 border rounded-md appearance-none bg-base-900 border-base-800 focus:bg-base-900 focus:border-accent-300 focus:outline-none focus:ring-accent-300 placeholder-base-500 sm:text-sm text-accent-300 text-lime"
               />
             </div>
             <div>
-              <label for="company" class="block text-sm font-medium text-white"
-                >What is the name of your company / organisation?</label
-              >
+              <label for="company" class="block text-sm font-medium text-white">
+                Company
+              </label>
               <input
                 id="company"
                 name="company"
                 type="text"
-                placeholder="Your Company"
-                aria-placeholder="Company name"
+                autocomplete="organization"
+                placeholder="Your company"
                 class="block w-full h-12 px-3 py-2 mt-2 border rounded-md appearance-none bg-base-900 border-base-800 focus:bg-base-900 focus:border-accent-300 focus:outline-none focus:ring-accent-300 placeholder-base-500 sm:text-sm text-accent-300 text-lime"
               />
             </div>
             <div>
-              <label for="email" class="block text-sm font-medium text-white"
-                >How shall we contact you?</label
-              >
+              <label for="email" class="block text-sm font-medium text-white">
+                Email
+              </label>
               <input
                 id="email"
                 name="email"
                 type="email"
-                autocomplete="off"
+                autocomplete="email"
                 placeholder="email@example.com"
-                aria-placeholder="Your email"
                 class="block w-full h-12 px-3 py-2 mt-2 border rounded-md appearance-none bg-base-900 border-base-800 focus:bg-base-900 focus:border-accent-300 focus:outline-none focus:ring-accent-300 placeholder-base-500 sm:text-sm text-accent-300 text-lime"
               />
             </div>
             <div>
-              <label for="message" class="block text-sm font-medium text-white"
-                >Project details</label
-              >
-              <div class="mt-1">
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder="Describe your project"
-                  aria-placeholder="Project details"
-                  rows="4"
-                  class="block w-full px-3 py-2 mt-2 border rounded-md appearance-none bg-base-900 border-base-800 focus:bg-base-900 focus:border-accent-300 focus:outline-none focus:ring-accent-300 placeholder-base-500 sm:text-sm text-accent-300 text-lime"
-                ></textarea>
-              </div>
+              <label for="phone" class="block text-sm font-medium text-white">
+                Phone
+              </label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                autocomplete="tel"
+                placeholder="(205) 936-6943"
+                class="block w-full h-12 px-3 py-2 mt-2 border rounded-md appearance-none bg-base-900 border-base-800 focus:bg-base-900 focus:border-accent-300 focus:outline-none focus:ring-accent-300 placeholder-base-500 sm:text-sm text-accent-300 text-lime"
+              />
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium text-white">
+                How can we help?
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Tell us about your automation, support, scheduling, or integration needs."
+                rows="5"
+                class="block w-full px-3 py-2 mt-2 border rounded-md appearance-none bg-base-900 border-base-800 focus:bg-base-900 focus:border-accent-300 focus:outline-none focus:ring-accent-300 placeholder-base-500 sm:text-sm text-accent-300 text-lime"
+              ></textarea>
             </div>
           </div>
-          <div class="mt-4">
-            <Button
-              size="lg"
-              variant="accent"
-              title="#_"
-              aria-label="#_"
-              class="w-full">Contact us!</Button
-            >
+          <div class="mt-5">
+            <Button size="lg" variant="accent" class="w-full">
+              Contact Clockwork Ideas
+            </Button>
           </div>
         </form>
       </div>
@@ -107,20 +161,24 @@ import Wrapper from "@/components/fundations/containers/Wrapper.astro";
     const name = String(formData.get("name") || "");
     const company = String(formData.get("company") || "");
     const email = String(formData.get("email") || "");
+    const phone = String(formData.get("phone") || "");
     const message = String(formData.get("message") || "");
 
-    const subject = encodeURIComponent(`New project inquiry from ${name || "website"}`);
+    const subject = encodeURIComponent(
+      `New Clockwork Ideas inquiry from ${name || "website"}`,
+    );
     const body = encodeURIComponent(
       [
         `Name: ${name}`,
         `Company: ${company}`,
         `Email: ${email}`,
+        `Phone: ${phone}`,
         "",
-        "Project details:",
+        "Message:",
         message,
       ].join("\n"),
     );
 
-    window.location.href = `mailto:dahle.assistant@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:john.dahle@clockworkideas.com?subject=${subject}&body=${body}`;
   });
 </script>

@@ -1,33 +1,18 @@
 ---
-service: 3D Design
-description: 3D Design involves the creation of digital environments, objects, and characters in three-dimensional space. 
+service: Scheduling Automation
+description: Scheduling automation connects calendars, reminders, confirmations, and follow-ups so appointments are easier to manage.
 ---
 
+## Scheduling Automation
 
-## Bringing Ideas to Life in Three Dimensions
+Clockwork Ideas builds scheduling workflows for small and medium businesses that need fewer manual reminders and clearer customer communication.
 
-Our 3D Design services specialize in creating high-quality, realistic 3D models and visualizations that capture the imagination. From concept to completion, we help bring your ideas to life with precision and creativity.
+### What We Build
 
-### Our Approach
+- Appointment intake and confirmation workflows.
+- Calendar integrations and operational notifications.
+- Reminder, reschedule, and follow-up automations.
 
-- **Concept Development**: We start with your ideas, sketches, or existing designs and work with you to develop a detailed concept for the 3D design.
+### Support
 
-- **Modeling & Texturing**: Using the latest software and techniques, we create detailed 3D models and apply realistic textures to bring them to life.
-
-- **Rendering & Animation**: We produce high-quality renders and animations that showcase your designs in the best light, providing a realistic preview of the final product.
-
-### Our Services
-
-- **Product Visualization**: Create lifelike representations of your products for marketing, presentations, and e-commerce.
-
-- **Architectural Rendering**: Visualize architectural projects with detailed exteriors and interiors before they are built.
-
-- **Animation & Walkthroughs**: Engage your audience with animated presentations and virtual walkthroughs of your designs.
-
-### Why Choose Us?
-
-- **Expertise in 3D Design**: Our team possesses the skills and knowledge to deliver top-quality 3D designs.
-
-- **Attention to Detail**: We pride ourselves on capturing every detail to make your designs as realistic as possible.
-
-- **Collaborative Process**: Work closely with our designers to ensure that the final product meets your exact specifications.
+Contact Clockwork Ideas at john.dahle@clockworkideas.com or (205) 936-6943.

@@ -1,33 +1,18 @@
 ---
-service: Design Systems
-description: Design Systems provide a comprehensive framework of design principles, reusable components, and guidelines for consistency and efficiency across digital products. 
+service: AI Assisted Workflow Automation
+description: AI-assisted workflow automation reduces repetitive work while keeping human review where judgment matters.
 ---
 
+## AI Assisted Workflow Automation
 
-## Bringing Stories to Life Through Motion
+Clockwork Ideas builds automations that connect the tools your business already uses and help staff move work from intake to completion with fewer manual handoffs.
 
-Our Motion Design services specialize in creating engaging and dynamic visual content that captures attention and communicates effectively. From animated logos to full-scale video productions, we bring your stories to life.
+### What We Build
 
-### Our Approach
+- Intake, triage, support, and follow-up workflows.
+- AI-assisted summaries, routing, and operational notifications.
+- Human review steps for sensitive customer or business actions.
 
-- **Concept & Storyboarding**: Developing the concept and visualizing the story through detailed storyboards.
+### Support
 
-- **Animation & Production**: Crafting high-quality animations and motion graphics that resonate with your audience.
-
-- **Sound Design & Editing**: Integrating sound effects, music, and voiceovers to enhance the storytelling.
-
-### Our Services
-
-- **Animated Explainers**: Convey complex ideas simply and engagingly through animated explainer videos.
-
-- **Brand & Logo Animations**: Elevate your brand identity with animated logos and brand visuals.
-
-- **Social Media Content**: Create captivating motion graphics for social media platforms to engage and grow your audience.
-
-### Why Choose Us?
-
-- **Creative Excellence**: Our team brings creativity and innovative thinking to every project.
-
-- **Technical Proficiency**: We use the latest tools and techniques to produce high-quality motion designs.
-
-- **Collaborative Process**: We work closely with you to ensure that the final product aligns with your vision and goals.
+Contact Clockwork Ideas at john.dahle@clockworkideas.com or (205) 936-6943.

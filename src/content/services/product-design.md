@@ -1,33 +1,18 @@
 ---
-service: Product Design
-description: Product Design is at the heart of creating functional, aesthetically pleasing products that meet the needs and desires of users. 
+service: AI Agents
+description: Custom AI agents answer questions, route requests, update systems, and support repeatable business workflows.
 ---
 
+## AI Agents
 
-## Innovate, Design, and Succeed
+Clockwork Ideas builds AI agents for small and medium businesses that need practical help with support, intake, scheduling, and internal operations.
 
-Our Product Design services focus on creating innovative and user-friendly products that stand out in the market. From ideation to prototyping, we work with you at every step to ensure your product is designed for success.
+### What We Build
 
-### Our Approach
+- Customer support and service request agents.
+- Internal knowledge and workflow agents.
+- Agents connected to calendars, forms, inboxes, and business tools.
 
-- **User Research**: Understanding the needs and behaviors of your target audience is the first step in our design process.
+### Support
 
-- **Ideation & Conceptualization**: We brainstorm and develop concepts that not only meet user needs but also align with your business goals.
-
-- **Design & Prototyping**: Our team designs and prototypes your product, focusing on usability, aesthetics, and functionality.
-
-### Our Services
-
-- **Industrial Design**: Designing physical products that are both functional and appealing.
-
-- **User Interface Design for Products**: Creating intuitive and engaging interfaces for digital products.
-
-- **Packaging Design**: Designing packaging that enhances the product experience and communicates your brand.
-
-### Why Choose Us?
-
-- **Comprehensive Design Solutions**: From concept to final product, we offer a full range of design services.
-
-- **User-Centric Design**: Our designs are focused on providing the best user experience.
-
-- **Innovative Solutions**: We push the boundaries of design to create products that truly stand out.
+Contact Clockwork Ideas at john.dahle@clockworkideas.com or (205) 936-6943.
