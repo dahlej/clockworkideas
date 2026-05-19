@@ -1,44 +1,48 @@
 ---
 page: DPA
-pubDate: 2026-01-01
+pubDate: 2026-05-19
 ---
 
 # Data Processing Agreement (DPA)
 
 ## Introduction
 
-This Data Processing Agreement ("Agreement") outlines the terms and responsibilities related to the processing of personal data by [Processor's Name] ("Processor") on behalf of [Controller's Name] ("Controller"), in accordance with the requirements of data protection laws applicable to the processing of personal data.
+This Data Processing Agreement ("Agreement") outlines the terms and responsibilities related to the processing of personal data by Clockwork Ideas for a customer when a written proposal, statement of work, or service agreement references this Agreement.
+
+Business name: Clockwork Ideas  
+Website: https://www.clockworkideas.com  
+Email: john.dahle@clockworkideas.com  
+Phone: (205) 936-6943
 
 ## Definitions
 
 - **Personal Data**: Any information relating to an identified or identifiable natural person.
 - **Processing**: Any operation or set of operations which is performed on personal data or on sets of personal data.
-- **Data Subject**: An identified or identifiable natural person whose personal data is processed by the Processor on behalf of the Controller.
+- **Customer**: The business or organization that engages Clockwork Ideas for services.
+- **Data Subject**: An identified or identifiable natural person whose personal data is processed in connection with Clockwork Ideas services.
+- **Service Provider**: Clockwork Ideas and any vetted vendors used to operate, secure, or deliver services.
 
 ## Scope and Purpose
 
-The purpose of this Agreement is to ensure the lawful and compliant processing of Personal Data by the Processor, as instructed by the Controller, and to define the rights and obligations of both parties.
+The purpose of this Agreement is to describe how Clockwork Ideas handles Personal Data when providing AI automation, customer communication, scheduling, workflow automation, business integration, support, training, and related technology services.
 
 ## Data Processing Terms
 
-1. **Processing Instructions**: The Processor agrees to process personal data only based on documented instructions from the Controller, unless required to do so by law.
-2. **Security of Processing**: The Processor shall implement appropriate technical and organizational measures to ensure a level of security appropriate to the risk.
-3. **Subprocessing**: The Processor shall not engage another processor without prior specific or general written authorization from the Controller.
-4. **Data Subject Rights**: The Processor shall assist the Controller in ensuring compliance with the data subjects' rights under the applicable data protection laws.
-5. **Data Breach Notification**: The Processor shall notify the Controller without undue delay upon becoming aware of a personal data breach.
+1. **Processing Instructions**: Clockwork Ideas processes Personal Data as needed to provide requested services, respond to support requests, operate customer workflows, and comply with applicable law.
+2. **Security of Processing**: Clockwork Ideas uses reasonable administrative, technical, and organizational safeguards designed to protect Personal Data.
+3. **Service Providers**: Clockwork Ideas may use limited service providers for hosting, communications, analytics, forms, security, development, and related operations. Service providers are authorized to use information only as needed to support Clockwork Ideas services.
+4. **SMS Consent**: SMS opt-in phone numbers and SMS consent are not shared with third parties or affiliates for marketing or promotional purposes.
+5. **Data Subject Requests**: Clockwork Ideas will reasonably assist customers with access, correction, deletion, or support requests when required by applicable law and operationally feasible.
+6. **Incident Notice**: If Clockwork Ideas becomes aware of a confirmed data incident affecting customer Personal Data, we will notify affected customers as required by applicable law.
 
 ## Duration and Termination
 
-This Agreement shall remain in effect as long as the Processor is processing Personal Data on behalf of the Controller. Upon termination, the Processor shall, at the choice of the Controller, delete or return all Personal Data to the Controller and delete existing copies unless EU law or the national law of an EU member state requires storage of the personal data.
+This Agreement remains in effect while Clockwork Ideas provides services involving Personal Data. Upon termination, Clockwork Ideas may retain records as reasonably necessary to maintain business records, comply with legal obligations, resolve disputes, enforce agreements, and support operational security.
 
 ## Governing Law
 
-This Agreement shall be governed by the laws of [Jurisdiction].
+This Agreement is governed by the same law and venue terms used in the applicable written customer agreement. If no separate written agreement applies, the terms on the Clockwork Ideas website apply to website and communication use.
 
-## Signature
+## Contact
 
-This Agreement has been entered into on the date of the last signature below.
-
-[Controller's Name] Signature: ************\_\_\_************ Date: ****\_\_\_****
-
-[Processor's Name] Signature: **************\_************** Date: ****\_\_\_****
+If you have questions about this Agreement, contact Clockwork Ideas at john.dahle@clockworkideas.com or (205) 936-6943.

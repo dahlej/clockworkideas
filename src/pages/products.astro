@@ -4,35 +4,167 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import Text from "@/components/fundations/elements/Text.astro";
 import Button from "@/components/fundations/elements/Button.astro";
 import Wrapper from "@/components/fundations/containers/Wrapper.astro";
+// Images
+import { Image } from "astro:assets";
+import chatConnect from "@/images/product/chatConnect.png";
+import loginConnect from "@/images/product/loginConnect.png";
+
+const features = [
+  {
+    title: "Customer conversations",
+    description:
+      "Give clients a simple place to ask for help, send updates, and keep support history together.",
+  },
+  {
+    title: "Secure access",
+    description:
+      "Let customers sign in with email or Google before they reach their support workspace.",
+  },
+  {
+    title: "Built for your workflow",
+    description:
+      "Shape the app around the way your team already handles customers, tickets, and follow-ups.",
+  },
+];
 ---
 
 <BaseLayout>
-  <section class="relative overflow-hidden">
+  <section class="relative overflow-hidden pt-36 pb-20 lg:pt-40 lg:pb-24">
     <Wrapper
       variant="standard"
-      class="flex min-h-dvh flex-col items-center justify-center py-32"
+      class="grid gap-10 lg:grid-cols-2 lg:items-start lg:gap-14"
     >
-      <div class="mx-auto max-w-2xl text-center">
+      <div class="max-w-2xl">
+        <Text
+          tag="p"
+          variant="textSM"
+          class="font-medium uppercase tracking-[0.18em] text-accent-300"
+        >
+          Custom support app
+        </Text>
         <Text
           data-aos="fade-up"
           data-aos-duration="1500"
           tag="h1"
           variant="displayXL"
-          class="text-white font-display"
+          class="mt-5 text-white font-display"
         >
-          Products coming soon
+          Clockwork Connect
         </Text>
         <Text
           tag="p"
-          variant="textBase"
-          class="mx-auto mt-5 max-w-xl text-base-300 text-balance"
+          variant="textLG"
+          class="mt-6 max-w-xl text-base-300 text-balance"
         >
-          We are building practical tools for teams that need reliable systems,
-          clear workflows, and fewer moving parts.
+          A custom-built customer support app for small businesses. Give your
+          customers a clean place to sign in, start a conversation, and get help
+          without adding enterprise software your team does not need.
         </Text>
-        <div class="mt-12 flex flex-wrap justify-center gap-3">
-          <Button href="/contact" size="lg" variant="accent">Get in touch</Button>
-          <Button href="/" size="lg" variant="muted">Back home</Button>
+
+        <div class="mt-8 flex flex-wrap gap-3">
+          <Button href="/contact" size="lg" variant="accent"
+            >Build my support app</Button
+          >
+          <Button href="/services" size="lg" variant="muted"
+            >View services</Button
+          >
+        </div>
+      </div>
+
+      <div
+        class="relative mx-auto flex w-full max-w-2xl items-end justify-center gap-4 sm:gap-6 lg:justify-end"
+        aria-label="Clockwork Connect product screens"
+      >
+        <figure
+          data-aos="fade-left"
+          data-aos-duration="1500"
+          class="w-[44%] max-w-52 translate-y-6 overflow-hidden rounded-[2rem] border border-base-800 bg-base-950 shadow-massive sm:max-w-56"
+        >
+          <Image
+            src={loginConnect}
+            alt="Clockwork Connect mobile sign-in screen"
+            class="h-auto w-full"
+            loading="eager"
+            decoding="async"
+          />
+          <figcaption class="sr-only">Clockwork Connect sign-in screen</figcaption>
+        </figure>
+        <figure
+          data-aos="fade-left"
+          data-aos-duration="1800"
+          class="w-[48%] max-w-56 overflow-hidden rounded-[2rem] border border-base-800 bg-base-950 shadow-massive sm:max-w-60"
+        >
+          <Image
+            src={chatConnect}
+            alt="Clockwork Connect mobile customer chat screen"
+            class="h-auto w-full"
+            loading="eager"
+            decoding="async"
+          />
+          <figcaption class="sr-only">Clockwork Connect chat screen</figcaption>
+        </figure>
+      </div>
+
+      <dl
+        class="grid gap-5 border-t border-base-800 pt-8 sm:grid-cols-3 lg:col-span-2"
+      >
+        <div>
+          <dt class="text-sm font-medium text-white">Sign in</dt>
+          <dd class="mt-2 text-sm leading-6 text-base-400">
+            Email and Google-ready access.
+          </dd>
+        </div>
+        <div>
+          <dt class="text-sm font-medium text-white">Chat</dt>
+          <dd class="mt-2 text-sm leading-6 text-base-400">
+            A focused customer message view.
+          </dd>
+        </div>
+        <div>
+          <dt class="text-sm font-medium text-white">Custom</dt>
+          <dd class="mt-2 text-sm leading-6 text-base-400">
+            Fit to your process and brand.
+          </dd>
+        </div>
+      </dl>
+    </Wrapper>
+  </section>
+
+  <section class="border-y border-base-800 bg-base-950/40">
+    <Wrapper variant="standard" class="py-16 lg:py-24">
+      <div class="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
+        <div>
+          <Text tag="h2" variant="displayMD" class="text-white font-display">
+            A support tool that feels like yours.
+          </Text>
+          <Text tag="p" variant="textBase" class="mt-4 max-w-xl text-base-400">
+            Small teams should not have to force their customer support into a
+            generic platform. Clockwork Connect starts with the core product
+            experience you need, then adapts to your business.
+          </Text>
+        </div>
+
+        <div class="grid gap-5 sm:grid-cols-3">
+          {
+            features.map((feature) => (
+              <article class="border-t border-base-800 pt-5">
+                <Text
+                  tag="h3"
+                  variant="textLG"
+                  class="font-medium text-white"
+                >
+                  {feature.title}
+                </Text>
+                <Text
+                  tag="p"
+                  variant="textSM"
+                  class="mt-4 leading-6 text-base-400"
+                >
+                  {feature.description}
+                </Text>
+              </article>
+            ))
+          }
         </div>
       </div>
     </Wrapper>

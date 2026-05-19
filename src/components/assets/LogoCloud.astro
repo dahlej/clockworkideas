@@ -2,16 +2,11 @@
 // Fundations
 import Text from "@/components/fundations/elements/Text.astro";
 import Wrapper from "@/components/fundations/containers/Wrapper.astro";
-// Assets
-import { Image } from "astro:assets";
-// import the logos
-import fishmanLogo from "@/images/logos/fishman-189x48-clean.png";
-const logos = [
-  {
-    src: fishmanLogo,
-    alt: "TheFishman logo",
-    href: "https://www.fishmanservices.com/",
-  },
+const capabilities = [
+  "AI agents",
+  "Workflow automation",
+  "Customer communication",
+  "Scheduling systems",
 ];
 ---
 
@@ -22,27 +17,18 @@ const logos = [
     >
       <div class="max-w-48 md:max-w-56">
         <Text tag="p" variant="textXS" class="text-base-300 text-balance">
-          Some of the amazing companies we have worked with
+          Clockwork Ideas builds practical automation systems for small business operations.
         </Text>
       </div>
       <div>
-        <div class="flex items-center justify-center">
+        <div class="flex flex-wrap items-center justify-center gap-3">
           {
-            logos.map((logo) => (
-              <a
-                href={logo.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Visit Fishman Services"
+            capabilities.map((capability) => (
+              <span
+                class="rounded-full border border-base-700 bg-base-950/70 px-4 py-2 text-sm text-base-200"
               >
-                <Image
-                  width={189}
-                  height={48}
-                  class="h-auto w-[189px] max-w-full"
-                  src={logo.src}
-                  alt={logo.alt}
-                />
-              </a>
+                {capability}
+              </span>
             ))
           }
         </div>

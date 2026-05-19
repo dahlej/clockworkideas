@@ -1,0 +1,219 @@
+---
+// Fundations
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Text from "@/components/fundations/elements/Text.astro";
+import Button from "@/components/fundations/elements/Button.astro";
+import Wrapper from "@/components/fundations/containers/Wrapper.astro";
+// Images
+import { Image } from "astro:assets";
+import workflowImage from "@/images/services/workflow.png";
+
+const services = [
+  {
+    title: "AI Agents",
+    description:
+      "Custom agents that answer questions, route requests, update systems, and handle repeatable customer or internal workflows.",
+  },
+  {
+    title: "AI Assisted Workflow Automation",
+    description:
+      "Automations that connect your tools, reduce manual handoffs, and keep people in control where judgment still matters.",
+  },
+  {
+    title: "Training",
+    description:
+      "Practical team training for using AI safely, writing better prompts, and turning everyday processes into repeatable systems.",
+  },
+];
+
+const outcomes = [
+  "Automate intake, scheduling, support, and follow-up steps",
+  "Connect forms, calendars, CRMs, inboxes, and internal tools",
+  "Create AI workflows your team can understand and maintain",
+  "Train staff on when to use AI, when to review, and how to improve outputs",
+];
+
+const process = [
+  {
+    step: "01",
+    title: "Map the workflow",
+    description:
+      "We document the current process, the systems involved, and the decisions that slow the team down.",
+  },
+  {
+    step: "02",
+    title: "Build the automation",
+    description:
+      "We create the agent, tool connections, checks, and handoff points needed for a reliable workflow.",
+  },
+  {
+    step: "03",
+    title: "Train the team",
+    description:
+      "We show your team how to use the new workflow, review AI outputs, and request future improvements.",
+  },
+];
+---
+
+<BaseLayout>
+  <section class="relative overflow-hidden pt-36 pb-20 lg:pt-40 lg:pb-24">
+    <Wrapper
+      variant="standard"
+      class="grid gap-12 lg:grid-cols-[0.82fr_1.18fr] lg:items-center"
+    >
+      <div class="max-w-2xl">
+        <Text
+          tag="p"
+          variant="textSM"
+          class="font-medium uppercase tracking-[0.18em] text-accent-300"
+        >
+          Services
+        </Text>
+        <Text
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          tag="h1"
+          variant="displayXL"
+          class="mt-5 text-white font-display text-balance"
+        >
+          AI systems for small business workflows.
+        </Text>
+        <Text
+          tag="p"
+          variant="textLG"
+          class="mt-6 max-w-xl text-base-300 text-balance"
+        >
+          We build AI Agents, AI Assisted workflow automation, and practical
+          training that help small teams move faster without losing control of
+          the customer experience.
+        </Text>
+
+        <div class="mt-8 flex flex-wrap gap-3">
+          <Button href="/contact" size="lg" variant="accent"
+            >Plan an automation</Button
+          >
+          <Button href="/products" size="lg" variant="muted"
+            >View products</Button
+          >
+        </div>
+      </div>
+
+      <figure
+        data-aos="fade-left"
+        data-aos-duration="1500"
+        class="aspect-[16/10] overflow-hidden rounded-3xl border border-base-800 bg-base-950 shadow-massive"
+      >
+        <Image
+          src={workflowImage}
+          alt="AI agent workflow automation diagram with webhook, model, memory, and calendar actions"
+          class="h-full w-full scale-150 object-cover object-[center_58%] opacity-90"
+          loading="eager"
+          decoding="async"
+        />
+        <figcaption class="sr-only">
+          Example AI agent workflow automation built from connected app actions.
+        </figcaption>
+      </figure>
+    </Wrapper>
+  </section>
+
+  <section class="border-y border-base-800 bg-base-950/40">
+    <Wrapper variant="standard" class="py-16 lg:py-24">
+      <div class="grid gap-10 lg:grid-cols-[0.75fr_1.25fr] lg:items-start">
+        <div>
+          <Text tag="h2" variant="displayMD" class="text-white font-display">
+            What we build
+          </Text>
+          <Text tag="p" variant="textBase" class="mt-4 max-w-xl text-base-400">
+            The goal is simple: remove repetitive work, make information easier
+            to act on, and leave your team with a system they know how to use.
+          </Text>
+        </div>
+
+        <div class="grid gap-6 sm:grid-cols-3">
+          {
+            services.map((service) => (
+              <article class="border-t border-base-800 pt-5">
+                <Text
+                  tag="h3"
+                  variant="textLG"
+                  class="font-medium text-white"
+                >
+                  {service.title}
+                </Text>
+                <Text
+                  tag="p"
+                  variant="textSM"
+                  class="mt-4 leading-6 text-base-400"
+                >
+                  {service.description}
+                </Text>
+              </article>
+            ))
+          }
+        </div>
+      </div>
+    </Wrapper>
+  </section>
+
+  <section>
+    <Wrapper variant="standard" class="py-16 lg:py-24">
+      <div class="grid gap-12 lg:grid-cols-2">
+        <div>
+          <Text tag="h2" variant="displayMD" class="text-white font-display">
+            Common outcomes
+          </Text>
+          <ul class="mt-8 grid gap-4">
+            {
+              outcomes.map((outcome) => (
+                <li class="flex gap-3 border-t border-base-800 pt-4">
+                  <span class="mt-1 size-2 rounded-full bg-accent-300" />
+                  <Text tag="p" variant="textBase" class="text-base-300">
+                    {outcome}
+                  </Text>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+
+        <div>
+          <Text tag="h2" variant="displayMD" class="text-white font-display">
+            How we work
+          </Text>
+          <div class="mt-8 grid gap-6">
+            {
+              process.map((item) => (
+                <article class="grid gap-4 border-t border-base-800 pt-5 sm:grid-cols-[4rem_1fr]">
+                  <Text
+                    tag="p"
+                    variant="textSM"
+                    class="font-medium text-accent-300"
+                  >
+                    {item.step}
+                  </Text>
+                  <div>
+                    <Text
+                      tag="h3"
+                      variant="textLG"
+                      class="font-medium text-white"
+                    >
+                      {item.title}
+                    </Text>
+                    <Text
+                      tag="p"
+                      variant="textSM"
+                      class="mt-3 leading-6 text-base-400"
+                    >
+                      {item.description}
+                    </Text>
+                  </div>
+                </article>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+    </Wrapper>
+  </section>
+</BaseLayout>
